@@ -9,12 +9,26 @@
 </head>
 
 <body class="flex gap-5">
-    <div>
-        <button id="verde" class="size-20 border-1 border-green-500 rounded-full cursor-pointer"></button>
-        <button id="amarillo" class="size-20 border-1 border-yellow-500 rounded-full cursor-pointer"></button>
-        <button id="rojo" class="size-20 border-1 border-red-500 rounded-full cursor-pointer"></button>
-    </div>
-    <p id="indicacion" class="text-3xl"></p>
+    <form action="" class="flex flex-col gap-5">
+        <div class="flex flex-col">
+            <label for="">Nombre</label>
+            <input type="text" class="border-1 rounded-lg" id="nombre">
+            <p id="nombreError" class="text-red-500"></p>
+        </div>
+        <div class="flex flex-col">
+            <label for="">Correo</label>
+            <input type="text" class="border-1 rounded-lg" id="correo">
+            <p id="correoError" class="text-red-500"></p>
+        </div>
+        <div class="flex flex-col">
+            <label for="">Edad</label>
+            <input type="number" class="border-1 rounded-lg" id="edad">
+            <p id="edadError" class="text-red-500"></p>
+        </div>
+        <button type="button" class="border-1 border-blue-500 bg-blue-200 rounded-lg"
+            id="registrarme">Registrarme</button>
+        <p id="text"></p>
+    </form>
     <script src="js/index.js"></script>
 </body>
 
