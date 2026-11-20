@@ -3,6 +3,8 @@ const parrafo = document.getElementById('parrafo');
 
 document.addEventListener('keydown', (e) => {
     if (e.key == 'Enter') {
-        parrafo.innerHTML = text.value;
+        parrafo.innerHTML += `
+        <p>${text.value}</p>
+        `
     }
 });
